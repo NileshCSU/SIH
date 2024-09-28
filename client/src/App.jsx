@@ -6,13 +6,15 @@ import DataTable from "./components/DummyComponents/DataTable.jsx";
 import NetworkLogs from "./components/DummyComponents/NetworkLogs.jsx";
 import ViewDashboard from "./components/ViewDashboard";
 import { data } from "./pages/jsonData.js";
+import DPDPAInfo from "./components/DPDPAInfo.jsx";
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/home" element={<LandingPage />} />
+        <Route path="/home" element={<LandingPage />} />    
+        <Route path="/data-protection" element={<DPDPAInfo />} />
         <Route path="/data" element={<Data />} />
         <Route path="/dashboard" element={<DataTable />} />
         <Route

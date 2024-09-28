@@ -12,6 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<LandingPage />} />
         <Route path="/data" element={<Data />} />
         <Route path="/dashboard" element={<DataTable />} />
         <Route

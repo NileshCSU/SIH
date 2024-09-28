@@ -27,11 +27,11 @@ const dataSets = {
     categoryB: [
       {
         id: "2E7NFe7",
-        title: "System Logs",
+        title: "Mobile",
         totalClicks: 15,
         status: true,
-        input: "Log ID: LOG12345",
-        output: "Log ID: *****2345",
+        input: "5956554665",
+        output: "59565*****",
         date: "2024-09-27",
       },
     ],
@@ -40,11 +40,11 @@ const dataSets = {
     categoryA: [
       {
         id: "3F8OGf8",
-        title: "Network Settings",
+        title: "IFSC Code",
         totalClicks: 25,
         status: true,
-        input: "Network ID: NET12345",
-        output: "Network ID: *****2345",
+        input: "SBI045484465156",
+        output: "SBI0454********",
         date: "2024-09-28",
       },
     ],
@@ -73,11 +73,11 @@ const dataSets = {
     categoryA: [
       {
         id: "6J2KLj2",
-        title: "Firewall Settings",
+        title: "Haryana Driver's LLW",
         totalClicks: 8,
         status: true,
-        input: "Firewall ID: FW9876",
-        output: "Firewall ID: *****876",
+        input: "HR23813213",
+        output: "HR2381*****",
         date: "2024-10-01",
       },
     ],
@@ -134,7 +134,7 @@ const DataTable = () => {
           }`}
         >
           <h4 className="font-bold">Doc 1</h4>
-          <p>Name, Location</p>
+          <p>Shubh Pundir's address</p>
         </div>
 
         {/* Card for Dataset 2 */}
@@ -145,7 +145,7 @@ const DataTable = () => {
           }`}
         >
           <h4 className="font-bold">Doc 2</h4>
-          <p>Network Settings, DB Access, Authentication</p>
+          <p>Soham Vashisht's SBI BANK passbook</p>
         </div>
 
         {/* Card for Dataset 3 */}
@@ -156,7 +156,7 @@ const DataTable = () => {
           }`}
         >
           <h4 className="font-bold">Doc 3</h4>
-          <p>Firewall, Audit Logs, Server Config</p>
+          <p>Nilesh Sharma's Driver's License</p>
         </div>
       </aside>
 
@@ -201,9 +201,9 @@ const DataTable = () => {
                       <label className="label cursor-pointer">
                         {/* <span className="label-text">Revoke Status :</span> */}
                         {item.status ? (
-                          <span className="text-green-600">Active</span>
+                          <span className="text-green-600">Granted</span>
                         ) : (
-                          <span className="text-red-600">Inactive</span>
+                          <span className="text-red-600">Revoked</span>
                         )}
                         <input
                           type="checkbox"
@@ -218,7 +218,7 @@ const DataTable = () => {
                       className="bg-green-500 p-1 rounded-lg"
                       to={`/network-logs/${item.id}`}
                     >
-                      Open
+                      View Audit
                     </Link>
                   </td>
                 </tr>
